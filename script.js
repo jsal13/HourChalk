@@ -11,7 +11,10 @@ function makeCard(title, desc, xp) {
 
     var cardXP = document.createElement("h5");
     cardXP.setAttribute("class", "card-xp");
-    cardXP.innerText = xp + "xp";
+    var cardXPSpan = document.createElement("span")
+    cardXPSpan.setAttribute("class", "badge rounded-pill text-bg-primary")
+    cardXPSpan.innerText = `${xp} xp`;
+    cardXP.append(cardXPSpan)
 
     var cardDesc = document.createElement("p");
     cardDesc.setAttribute("class", "card-text");
