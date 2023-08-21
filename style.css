@@ -1,8 +1,5 @@
-.playing-card {
-    width: 240px;
-    height: 336px;
-    border: 2px solid black;
-    border-radius: 1rem;
+body {
+    font-family: 'Lora', serif;
 }
 
 .grid-container {
@@ -10,3 +7,58 @@
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fit, 240px);
 }
+
+/* CARD */
+.playing-card {
+    width: 240px;
+    height: 336px;
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 5px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    align-self: center;
+}
+
+.card-title-div {
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card-text {
+    font-style: italic;
+
+}
+
+.star-icon {
+    width: 2rem;
+}
+
+.stars-div {
+    height: 1.5rem;
+}
+
+/* END CARD  */
+
+/* CHORE TYPES */
+.cleaning {
+    background-color: #def3fd;
+}
+
+.laundry {
+    background-color: #fcf7de;
+}
+
+/* 
+TODO: Other colors:
+    - Red: #fddfdf
+    - Purple: #f0defd
+    - Green: #defde0
+*/
+
+/* END CHORE TYPES */
