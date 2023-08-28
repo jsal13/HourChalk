@@ -13,3 +13,4 @@ These are TODO items for James or whomever.
 - JSON is a crappy way of representing lists, etc.  Maybe there's an easier way to make cards so anyone can do it without these hacks?
 - Colors look real janky.
 - Haha, AI Images.
+- Parse mana costs.

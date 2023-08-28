@@ -55,16 +55,25 @@ ul {
     margin-top: .25rem
 }
 
+.mana-cost-div {
+    display: flex;
+    flex-direction: row;
+}
+
 .cost-circle {
     border-radius: 50%;
     width: 0.8rem;
     height: 0.8rem;
-    /* padding: 10px; */
     background: lightgray;
     border-width: 1px;
     border-style: ridge;
     color: #000;
     text-align: center;
+}
+
+.cost-mana {
+    width: 0.8rem;
+    height: 0.8rem;
 }
 
 .chalk-card-image-div {

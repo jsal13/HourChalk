@@ -2,7 +2,7 @@ const cardList = [
     {
         "name": "Cleanse of the Orderly Sanctum",
         "color": "blue",
-        "cost": "2",
+        "cost": "1,U",
         "choretype": "Cleaning",
         "description": "Clean one of the following &mdash; <ul><li>Bathroom</li><li>Kitchen</li><li>Bedroom</li></ul>",
         "flavortext": "A tidy space reveals the elegance of the mind within. Sweep away the chaos, and harmony shall flourish.",
@@ -11,7 +11,7 @@ const cardList = [
     {
         "name": "Laundry Ritual",
         "color": "white",
-        "cost": "2",
+        "cost": "1,1W",
         "choretype": "Laundry",
         "description": "Gather, wash, dry, and put away your dirty clothing (in that order).",
         "flavortext": "Turn socks into gold, and watch the laundry magic unfold.",
@@ -20,16 +20,16 @@ const cardList = [
     {
         "name": "Overwhelming Clutter",
         "color": "black",
-        "cost": "2",
+        "cost": "2B",
         "choretype": "Declutter",
-        "description": "Choose a room in your home.  Set a timer for 20 minutes.  Declutter the chosen room.",
+        "description": "Choose a room in your home.  Set a timer for 30 minutes.  Declutter the chosen room.",
         "flavortext": "When clutter reigns, chaos takes hold.",
         "image": "overwhelming_clutter.png"
     },
     {
         "name": "Flames of Culinary Zeal",
         "color": "red",
-        "cost": "2",
+        "cost": "1,1R",
         "choretype": "Cooking",
         "description": "Mealprep dinner for the next two dinners.",
         "flavortext": "With swift precision, the chef turns ingredients into masterpieces, and chaos into flavor.",
@@ -38,11 +38,11 @@ const cardList = [
     {
         "name": "Vitality's Renewal",
         "color": "green",
-        "cost": "2",
+        "cost": "2G",
         "choretype": "Exercise",
         "description": "Exercise for 45 consecutive minutes.",
         "flavortext": "Through every stride, every lift, and every push, the body and spirit find renewal.",
-        "image": "circuitmender.png"
+        "image": "vitalitys_renewal.png"
     },
     {
         "name": "Circuit Mender",
