@@ -1,5 +1,6 @@
 body {
-    font-family: 'Lora', serif;
+    /* font-family: 'Lora', serif; */
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .grid-container {
@@ -19,39 +20,65 @@ body {
 
 .card-title {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 0.9rem;
     margin-bottom: 0;
     align-self: center;
 }
 
 .card-title-div {
-    height: 4rem;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    padding-top: 0.3rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
 }
 
 .card-text {
     font-style: italic;
+}
 
+.material-symbols-rounded {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.cost-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto
 }
 
 .star-icon {
-    width: 2rem;
+    font-size: 2.6rem;
+    color: gold
 }
 
+.card-cost {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.8rem;
+    color: rgb(0, 0, 0);
+    translate: 1.55rem 0.15rem;
+    font-weight: bold;
+}
+
+/*
 .stars-div {
     height: 1.5rem;
-}
+} */
 
 /* END CARD  */
 
 /* CHORE TYPES */
 .cleaning {
-    background-color: #def3fd;
+    /* background-color: #def3fd; */
 }
 
 .laundry {
-    background-color: #fcf7de;
+    /* background-color: #fcf7de; */
 }
 
 /* 

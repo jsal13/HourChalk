@@ -11,20 +11,30 @@ function makeCard(title, desc, xp, type) {
     cardTitleText.innerText = title;
     cardTitle.append(cardTitleText)
 
-    var cardXP = document.createElement("h5");
-    cardXP.setAttribute("class", "card-xp");
+    // var cardCost = document.createElement("h5");
+    // cardCost.setAttribute("class", "card-xp");
     // var cardXPSpan = document.createElement("span")
     // cardXPSpan.setAttribute("class", "badge rounded-pill text-bg-primary")
 
-    var starsDiv = document.createElement("div");
-    starsDiv.setAttribute("class", "stars-div");
-    for (var idx = 0; idx < xp; idx++) {
-        var star = document.createElement("img")
-        star.setAttribute("src", "./assets/images/star.svg");
-        star.setAttribute("class", "star-icon");
-        starsDiv.append(star);
-    }
-    cardXP.append(starsDiv);
+    // var starsDiv = document.createElement("div");
+    // starsDiv.setAttribute("class", "stars-div");
+    // for (var idx = 0; idx < xp; idx++) {
+    //     var star = document.createElement("img")
+    //     star.setAttribute("src", "./assets/images/star.svg");
+    //     star.setAttribute("class", "star-icon");
+    //     starsDiv.append(star);
+    // }
+    // cardXP.append(starsDiv);
+
+    var cardCostDiv = document.createElement("div");
+    cardCostDiv.setAttribute("class", "cost-div");
+    var cardCostStar = document.createElement("span");
+    cardCostStar.setAttribute("class", "star-icon material-symbols-rounded");
+    cardCostStar.innerText = "star"
+    var cardCost = document.createElement("span");
+    cardCost.setAttribute("class", "card-cost");
+    cardCost.innerText = xp;
+    cardCostDiv.append(cardCost, cardCostStar);
 
     var cardDesc = document.createElement("p");
     cardDesc.setAttribute("class", "card-text");
@@ -33,6 +43,6 @@ function makeCard(title, desc, xp, type) {
     var hr1 = document.createElement("hr");
     var hr2 = document.createElement("hr");
 
-    cardBody.append(cardTitle, hr1, cardXP, hr2, cardDesc);
+    cardBody.append(cardTitle, cardDesc, cardCostDiv);
     cardList.append(cardBody);
 }

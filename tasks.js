@@ -12,7 +12,7 @@ const tasks = [
         "type": "cleaning"
     },
     {
-        "task": "Clean: Kitchen Sink and Counter",
+        "task": "Clean Kitchen Sink and Counter",
         "desc": "Clean the kitchen sink, counter, and anything else that sticks out!",
         "xp": 2,
         "type": "cleaning"
@@ -58,26 +58,26 @@ const tasks = [
         "task": "Do Laundry",
         "desc": "Wash and dry dirty clothes.",
         "xp": 3,
-        "type": "laundry"
+        "type": "cleaning"
     },
     {
         "task": "Replace Sheets on Bed",
         "desc": "Replace the sheets and pillowcases on your bed.",
         "xp": 2,
-        "type": "laundry"
+        "type": "cleaning"
     },
     {
         "task": "Put away Laundry",
         "desc": "Fold and put away laundry.",
         "xp": 2,
-        "type": "laundry"
+        "type": "cleaning"
     },
 
     {
         "task": "Get Groceries",
         "desc": "Buy food, supplies, and other household essentials from the grocery store.",
         "xp": 3,
-        "type": "laundry"
+        "type": "cleaning"
     },
 ]
 
