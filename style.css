@@ -5,6 +5,17 @@ body {
     font-weight: 700;
 }
 
+hr {
+    border: 0;
+    background-color: gray;
+    margin: .2rem;
+    height: 1px
+}
+
+ul {
+    margin-bottom: 0;
+}
+
 .grid-container {
     display: grid;
     grid-gap: 10px;
@@ -42,6 +53,18 @@ body {
 
 .chalk-card-title-section {
     margin-top: .25rem
+}
+
+.cost-circle {
+    border-radius: 50%;
+    width: 0.8rem;
+    height: 0.8rem;
+    /* padding: 10px; */
+    background: lightgray;
+    border-width: 1px;
+    border-style: ridge;
+    color: #000;
+    text-align: center;
 }
 
 .chalk-card-image-div {
@@ -82,32 +105,45 @@ body {
     font-style: italic
 }
 
-hr {
-    border: 0;
-    background-color: gray;
-    margin: .2rem;
-    height: 1px
-}
-
-.circle {
-    border-radius: 50%;
-    width: 0.8rem;
-    height: 0.8rem;
-    /* padding: 10px; */
-    background: lightgray;
-    border-width: 1px;
-    border-style: ridge;
-    color: #000;
-    text-align: center;
-}
-
 /* CARD COLORS */
+/* https://www.heavy.ai/blog/12-color-palettes-for-telling-better-stories-with-your-data */
+
+.chalk-card-black {
+    background: linear-gradient(135deg, #d7e1ee 0%, #222222 20%);
+}
+
+.chalk-card-section-black {
+    background-color: #d7e1ee;
+}
+
+.chalk-card-red {
+    background: linear-gradient(135deg, #d7e1ee 0%, #ea5545 20%);
+}
+
+.chalk-card-section-red {
+    background-color: #d7e1ee;
+}
+
+.chalk-card-white {
+    background: linear-gradient(135deg, #edbf33 0%, #d7e1ee 20%);
+}
+
+.chalk-card-section-white {
+    background-color: #d7e1ee;
+}
+
+.chalk-card-green {
+    background: linear-gradient(135deg, #d7e1ee 0%, #76c68f 20%);
+}
+
+.chalk-card-section-green {
+    background-color: #d7e1ee;
+}
 
 .chalk-card-blue {
-    background: rgb(206, 238, 248);
-    background: linear-gradient(135deg, rgb(82 192 239) 0%, rgb(114 144 191) 90%);
+    background: linear-gradient(135deg, #d7e1ee 0%, #27aeef 20%);
 }
 
 .chalk-card-section-blue {
-    background-color: rgb(224 246 253);
+    background-color: #d7e1ee;
 }

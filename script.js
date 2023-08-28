@@ -1,4 +1,13 @@
-function makeCard(name, color, cost, choretype, description, flavortext, image) {
+// https://fonts.google.com/icons
+choreTypeIcons = {
+    "Cleaning": "water_drop",
+    "Cooking": "restaurant",
+    "Declutter": "delete",
+    "Exercise": "directions_run",
+    "Laundry": "laundry",
+}
+
+function makeCard(name, color, cost, choreType, description, flavortext, image) {
     const cardList = document.getElementById("card-list");
 
     var card = document.createElement("div");
@@ -7,7 +16,7 @@ function makeCard(name, color, cost, choretype, description, flavortext, image) 
     var cardTitle = `
     <div class="chalk-card-section chalk-card-section-${color} chalk-card-title-section">
         <span class="chalk-card-title">${name}</span>
-        <div class="chalk-card-cost circle">${cost}</div>
+        <div class="chalk-card-cost cost-circle">${cost}</div>
     </div>
     `
 
@@ -21,8 +30,8 @@ function makeCard(name, color, cost, choretype, description, flavortext, image) 
 
     var cardType = `
     <div class="chalk-card-section chalk-card-section-${color} chalk-card-type ">
-        <span>Chore Type &mdash; ${choretype}</span>
-        <span class="material-symbols-outlined"> laundry </span>
+        <span>Chore Type &mdash; ${choreType}</span>
+        <span class="material-symbols-outlined"> ${choreTypeIcons[choreType]} </span>
     </div>
     `
 
