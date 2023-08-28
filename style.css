@@ -1,91 +1,113 @@
 body {
-    /* font-family: 'Lora', serif; */
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "EB Garamond", serif;
+    font-size: 10px;
+    line-height: 1.2;
+    font-weight: 700;
 }
 
 .grid-container {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, 240px);
+    grid-template-columns: repeat(auto-fit, 240px)
 }
 
-/* CARD */
-.playing-card {
-    width: 240px;
-    height: 336px;
-    border: 2px solid black;
-    border-radius: 1rem;
-    padding: 5px;
-}
-
-.card-title {
-    font-weight: bold;
-    font-size: 0.9rem;
-    margin-bottom: 0;
-    align-self: center;
-}
-
-.card-title-div {
+.chalk-card {
+    width: 2.5in;
+    height: 3.5in;
+    border: .4rem solid #000;
+    border-bottom: 1rem solid #000;
+    border-radius: .5rem;
     display: flex;
-    justify-content: left;
-    padding-top: 0.3rem;
-    padding-left: 0.3rem;
-    padding-right: 0.3rem;
+    flex-direction: column;
 }
 
-.card-text {
-    font-style: italic;
+.chalk-card-section {
+    border-style: ridge;
+    border-radius: .4rem;
 }
 
-.material-symbols-rounded {
-    font-variation-settings:
-        'FILL' 1,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24
+.chalk-card-section-lightbg {
+    background-color: #f0f0f0;
 }
 
-.cost-div {
+.chalk-card-title-section,
+.chalk-card-type {
+    margin-left: .1rem;
+    margin-right: .1rem;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    padding: 0 .25rem
+}
+
+.chalk-card-title-section {
+    margin-top: .25rem
+}
+
+.chalk-card-image-div {
+    width: 2.3in;
+    height: 1.8in;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0
+}
+
+.chalk-card-img {
+    width: 100%;
+    height: 100%
+}
+
+.material-symbols-outlined {
+    font-size: 0.75rem;
+}
+
+.chalk-card-desc {
+    display: flex;
+    margin-bottom: .5rem;
+    margin-left: .1rem;
+    margin-right: .1rem;
+    padding: .25rem;
+    height: 100%;
+    flex-direction: column;
     justify-content: center;
-    margin-top: auto
+    background-color: #f0f0f0;
 }
 
-.star-icon {
-    font-size: 2.6rem;
-    color: gold
+.chalk-card-desc-main-text {
+    font-weight: 600
 }
 
-.card-cost {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 0.8rem;
-    color: rgb(0, 0, 0);
-    translate: 1.55rem 0.15rem;
-    font-weight: bold;
+.chalk-card-desc-flavor-text {
+    font-weight: 500;
+    font-style: italic
 }
 
-/*
-.stars-div {
-    height: 1.5rem;
-} */
-
-/* END CARD  */
-
-/* CHORE TYPES */
-.cleaning {
-    /* background-color: #def3fd; */
+hr {
+    border: 0;
+    background-color: gray;
+    margin: .2rem;
+    height: 1px
 }
 
-.laundry {
-    /* background-color: #fcf7de; */
+.circle {
+    border-radius: 50%;
+    width: 0.8rem;
+    height: 0.8rem;
+    /* padding: 10px; */
+    background: lightgray;
+    border-width: 1px;
+    border-style: ridge;
+    color: #000;
+    text-align: center;
 }
 
-/* 
-TODO: Other colors:
-    - Red: #fddfdf
-    - Purple: #f0defd
-    - Green: #defde0
-*/
+/* CARD COLORS */
 
-/* END CHORE TYPES */
+.chalk-card-blue {
+    background: rgb(206, 238, 248);
+    background: linear-gradient(135deg, rgb(82 192 239) 0%, rgb(114 144 191) 90%);
+}
+
+.chalk-card-section-blue {
+    background-color: rgb(224 246 253);
+}

@@ -1,48 +1,48 @@
-function makeCard(title, desc, xp, type) {
+function makeCard(name, color, cost, choretype, description, flavortext, image) {
     const cardList = document.getElementById("card-list");
 
-    var cardBody = document.createElement("div");
-    cardBody.setAttribute('class', `card playing-card ${type}`)
+    var card = document.createElement("div");
+    card.setAttribute("class", `chalk-card chalk-card-${color}`);
 
-    var cardTitle = document.createElement("div");
-    cardTitle.setAttribute("class", "card-title-div");
-    var cardTitleText = document.createElement("p");
-    cardTitleText.setAttribute("class", "card-title");
-    cardTitleText.innerText = title;
-    cardTitle.append(cardTitleText)
+    var cardTitle = `
+    <div class="chalk-card-section chalk-card-section-${color} chalk-card-title-section">
+        <span class="chalk-card-title">${name}</span>
+        <div class="chalk-card-cost circle">${cost}</div>
+    </div>
+    `
 
-    // var cardCost = document.createElement("h5");
-    // cardCost.setAttribute("class", "card-xp");
-    // var cardXPSpan = document.createElement("span")
-    // cardXPSpan.setAttribute("class", "badge rounded-pill text-bg-primary")
+    // If there's an image, use the image.
+    var cardImage = ""
+    if (image !== "") {
+        var cardImage = `<div class="chalk-card-section chalk-card-image-div">
+        <img class="chalk-card-img" src="./assets/images/${image}" />
+    </div>`
+    }
 
-    // var starsDiv = document.createElement("div");
-    // starsDiv.setAttribute("class", "stars-div");
-    // for (var idx = 0; idx < xp; idx++) {
-    //     var star = document.createElement("img")
-    //     star.setAttribute("src", "./assets/images/star.svg");
-    //     star.setAttribute("class", "star-icon");
-    //     starsDiv.append(star);
-    // }
-    // cardXP.append(starsDiv);
+    var cardType = `
+    <div class="chalk-card-section chalk-card-section-${color} chalk-card-type ">
+        <span>Chore Type &mdash; ${choretype}</span>
+        <span class="material-symbols-outlined"> laundry </span>
+    </div>
+    `
 
-    var cardCostDiv = document.createElement("div");
-    cardCostDiv.setAttribute("class", "cost-div");
-    var cardCostStar = document.createElement("span");
-    cardCostStar.setAttribute("class", "star-icon material-symbols-rounded");
-    cardCostStar.innerText = "star"
-    var cardCost = document.createElement("span");
-    cardCost.setAttribute("class", "card-cost");
-    cardCost.innerText = xp;
-    cardCostDiv.append(cardCost, cardCostStar);
+    var cardText = `
+    <div class="chalk-card-section chalk-card-section-lightbg chalk-card-desc ">
+        <div class="chalk-card-desc-main-text">${description}</div>
+        <hr />
+        <div class="chalk-card-desc-flavor-text">${flavortext}</div>
+    </div>
+    `
 
-    var cardDesc = document.createElement("p");
-    cardDesc.setAttribute("class", "card-text");
-    cardDesc.innerText = desc;
+    cardHTML = cardTitle + cardImage + cardType + cardText;
 
-    var hr1 = document.createElement("hr");
-    var hr2 = document.createElement("hr");
+    card.innerHTML = cardHTML;
+    cardList.append(card);
+}
 
-    cardBody.append(cardTitle, cardDesc, cardCostDiv);
-    cardList.append(cardBody);
+function makeCards(cards) {
+    for (card of cards) {
+        makeCard(card["name"], card["color"], card["cost"], card["choretype"], card["description"], card["flavortext"], card["image"])
+    }
+
 }
