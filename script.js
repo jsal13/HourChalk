@@ -36,7 +36,7 @@ function parseCost(cost) {
     for (costVal of costArr) {
         var costVal = costVal.trim();
 
-        var manaNum = parseInt(costVal.match(manaNumberRegex));
+        var manaNum = parseInt(costVal.match(manaNumberRegex) ?? 1);
         var manaColor = costVal.match(manaColorRegex);
 
         // Colorless mana.

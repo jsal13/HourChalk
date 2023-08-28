@@ -2,7 +2,7 @@ const cardList = [
     {
         "name": "Cleanse of the Orderly Sanctum",
         "color": "blue",
-        "cost": "1,U",
+        "cost": "1, U",
         "choretype": "Cleaning",
         "description": "Clean one of the following &mdash; <ul><li>Bathroom</li><li>Kitchen</li><li>Bedroom</li></ul>",
         "flavortext": "A tidy space reveals the elegance of the mind within. Sweep away the chaos, and harmony shall flourish.",
@@ -11,7 +11,7 @@ const cardList = [
     {
         "name": "Laundry Ritual",
         "color": "white",
-        "cost": "1,1W",
+        "cost": "1, W",
         "choretype": "Laundry",
         "description": "Gather, wash, dry, and put away your dirty clothing (in that order).",
         "flavortext": "Turn socks into gold, and watch the laundry magic unfold.",
@@ -29,7 +29,7 @@ const cardList = [
     {
         "name": "Flames of Culinary Zeal",
         "color": "red",
-        "cost": "1,1R",
+        "cost": "1, R",
         "choretype": "Cooking",
         "description": "Mealprep dinner for the next two dinners.",
         "flavortext": "With swift precision, the chef turns ingredients into masterpieces, and chaos into flavor.",
@@ -38,7 +38,7 @@ const cardList = [
     {
         "name": "Vitality's Renewal",
         "color": "green",
-        "cost": "2G",
+        "cost": "1, G",
         "choretype": "Exercise",
         "description": "Exercise for 45 consecutive minutes.",
         "flavortext": "Through every stride, every lift, and every push, the body and spirit find renewal.",
